@@ -1,0 +1,49 @@
+/* ---------------------------------- */
+/* HEADER */
+.main-header {
+    width:95%;
+    height: 8rem;
+    margin:0 auto;
+    margin-top:5rem;
+    /* display: grid;
+    grid-template-columns:292px auto 150px 260px; */
+    align-items: center;
+    justify-items: center;
+    display:flex;
+}
+
+.main-header a {
+    text-decoration:none;
+    font-size:16px;
+}
+
+.main-nav{
+    justify-self: end;
+    display:flex;
+    justify-content: flex-end;
+    gap:30px;
+    margin-right:20px;
+    flex:1 1 auto;
+}
+
+.logo {
+    /* width: 294px; */
+    flex:0 0 auto;
+    width: 29rem;
+
+}
+.main-nav .nav-item{
+    color:black;
+}
+
+.nav-item>i{
+    font-size:16px;
+    vertical-align: bottom;
+    margin:0 4px;
+}
+
+.sign-up{
+    color:#E77824;
+    font-weight:bold;
+    flex: 0 0  auto;
+}

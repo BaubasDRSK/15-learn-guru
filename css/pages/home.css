@@ -1,0 +1,146 @@
+@import '../base/base.css';
+@import '../base/layout.css';
+
+@import '../components/header.css';
+@import '../components/button.css';
+
+
+
+
+/* ********** Section HERO */
+
+.hero {
+    width:100%;
+    max-width:1920px;
+    min-height:calc(100vh - 13rem);
+    background-image: url('../../img/hero-img.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content{
+    /* float:left; */
+    margin-left:55px;
+}
+
+.new{
+    font-size:14px;
+    display: inline-block;
+    background-color:#FBE8DA;
+    padding:0 22px 0 0;
+    border-radius: 30px;
+    color:#3C336F;
+    margin-bottom:15px;
+}
+
+.new .new-btn{
+    padding:10px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display:inline-block;
+    background-color:#E77824;
+    border-radius: 30px;
+    color:white;
+    margin-right:15px;
+}
+
+.main-title{
+    font-size:60px;
+    text-transform: capitalize;
+    max-width: 45%;
+}
+
+.hero-info{
+    font-size: 16px;
+    max-width: 45%;
+}
+
+.hero-search{
+    margin-top:30px;
+    border-radius: 50px;
+    padding:10px 10px 10px 10px;
+    color:#374D78;
+    font-size:16px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 3px 3px 10px #999;
+}
+
+.hero-search .search {
+    display:inline-block;
+    text-decoration: none;
+    margin-left:58px;
+    margin-right:10px;
+    position: relative;
+}
+
+.search i {
+    vertical-align: bottom;
+    margin: 0 4px;
+}
+
+.search:first-child i {
+    vertical-align: middle;
+
+}
+
+.search:nth-last-child(n+3)::after{
+    content:"";
+    display:inline-block;
+    height:68px;
+    width:1px;
+    background-color: #d9e1ea;
+    position: absolute;
+    top:-23px;
+    margin-left:30px;
+}
+
+.search:nth-child(1) i {
+    color:rgb(142, 142, 142);
+}
+
+.search:last-child {
+    margin-right: 0;
+}
+
+
+
+/* ***************************************** */
+/* SCROLL ANIMATED */
+
+.scroll-anim{
+    position: absolute;
+    bottom:0;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding:40px 25px 40px 25px;
+    background-color: white;
+    box-shadow: 3px 3px 10px #999;
+}
+
+.scroll-anim i{
+    position: absolute;
+    left:1.8rem;
+    top:15px;
+    color:#000F;
+    animation: scroll 2s infinite linear;
+
+}
+
+@keyframes scroll {
+    0%{ top:15px;
+        color:#000f;
+    }
+    70%{
+        color:#000F;
+    }
+
+    100%{ top:40px;
+        color:#0000;
+    }
+}
