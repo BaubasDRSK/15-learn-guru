@@ -3,7 +3,7 @@
 .main-header {
     width:95%;
     max-width: 1920px;
-    height: 8rem;
+    /* height: 8rem; */
     margin:0 auto;
     margin-top:5rem;
     align-items: center;
@@ -64,8 +64,13 @@
 }
 
 .hamburger a::after{
+    font-family: 'Archivo', sans-serif;
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 10px;
+    vertical-align: middle;
     content:'Menu';
-    font-size:15px;
+    font-size:20px;
     vertical-align: middle;
 }
 
@@ -73,6 +78,25 @@
 /* *************************** MEDIA **************************** */
 /* ************************************************************** */
 @media (max-width:800px){
-    .hamburger{display:flex;}
+    .hamburger{display:flex; align-self:center;}
     .desktop-menu{display:none;}
-};
+
+    .main-header{align-items: start; height:15rem;}
+    section.hero {margin-top: 3rem;}
+
+    
+}
+
+@media (max-width:557px) {
+    .main-header{
+        flex-direction: column;
+        flex-wrap:nowrap;
+        align-items: center;
+    }
+
+    .hamburger{
+        position: absolute;
+        top: 20px;
+        right:20px;
+    }
+}
