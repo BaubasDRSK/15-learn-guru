@@ -12,6 +12,7 @@
 .hero {
     width:100%;
     max-width:1920px;
+    margin:0 auto;
     min-height:calc(100vh - 13rem);
     background-image: url('../../img/hero-img.svg');
     background-size:contain;
@@ -115,7 +116,7 @@
 
 .scroll-anim{
     position: absolute;
-    bottom:0;
+    bottom:30px;
     font-size: 2rem;
     border-radius: 50px;
     padding:40px 25px 40px 25px;
@@ -125,11 +126,10 @@
 
 .scroll-anim i{
     position: absolute;
-    left:1.8rem;
+    left:1.7rem;
     top:15px;
     color:#000F;
-    animation: scroll 2s infinite linear;
-
+    animation: scroll 0.8s infinite linear;
 }
 
 @keyframes scroll {
@@ -144,3 +144,4 @@
         color:#0000;
     }
 }
+/* ****************************************  */
