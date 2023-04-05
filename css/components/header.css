@@ -87,13 +87,15 @@
     
 }
 
-@media (max-width:557px) {
+@media (max-width:573px) {
     .main-header{
         flex-direction: column;
         flex-wrap:nowrap;
         align-items: center;
     }
-
+    .logo{
+        margin-bottom: 15px;
+    }
     .hamburger{
         position: absolute;
         top: 20px;
